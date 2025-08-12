@@ -1,0 +1,12 @@
+<package format="2">
+  <name>livox_bag_aggregate</name>
+  <version>0.0.1</version>
+  <description>Aggregate Livox CustomMsg from a bag into PointCloud2 and write to a new bag</description>
+  <maintainer email="you@example.com">you</maintainer>
+  <license>BSD</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roscpp</depend>
+  <depend>rosbag</depend>
+  <depend>sensor_msgs</depend>
+  <depend>livox_ros_driver</depend>
+</package>
