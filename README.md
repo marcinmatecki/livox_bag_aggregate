@@ -22,7 +22,8 @@ chmod +x livox_bag.sh
 ./livox_bag.sh <input_bag> <output_folder>
 ```
 
-
+## Step 4 (expected outcome)
+'reg-1.bag-pc.bag' file should appear in <output_folder>
 
 # Intended use
 
