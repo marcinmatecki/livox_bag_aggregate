@@ -19,7 +19,7 @@ docker build -t livox_bag_aggregate_noetic .
 ```shell
 cd ~/hdmapping-benchmark/livox_bag_aggregate
 chmod +x livox_bag.sh 
-livox_bag.sh <input_bag> <output_folder>
+./livox_bag.sh <input_bag> <output_folder>
 ```
 
 
@@ -55,5 +55,5 @@ docker build -t livox_bag_aggregate_noetic .
 ```shell
 cd ~/hdmapping-benchmark/livox_bag_aggregate
 chmod +x livox_bag.sh 
-livox_bag.sh <input_bag> <output_folder>
+./livox_bag.sh <input_bag> <output_folder>
 ```
