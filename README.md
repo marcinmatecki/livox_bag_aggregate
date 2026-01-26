@@ -1,5 +1,29 @@
 # ros1 converter CustomMsg to PointCloud2
 
+# Simlified instruction
+
+## Step 1 (prepare code)
+```shell
+mkdir -p ~/hdmapping-benchmark
+cd ~/hdmapping-benchmark
+git clone https://github.com/MapsHD/livox_bag_aggregate.git --recursive
+```
+
+## Step 2 (build docker)
+```shell
+cd ~/hdmapping-benchmark/livox_bag_aggregate
+docker build -t livox_bag_aggregate_noetic .
+```
+
+## Step 3 (run docker)
+```shell
+cd ~/hdmapping-benchmark/livox_bag_aggregate
+chmod +x livox_bag.sh 
+livox_bag.sh <input_bag> <output_folder>
+```
+
+
+
 # Intended use
 
 ```shell
@@ -17,19 +41,19 @@ sudo usermod -aG docker $USER
 ## Workspace
 
 ```shell
-mkdir -p ~/livox_converter_ws
-cd ~/livox_converter_ws
+mkdir -p ~/hdmapping-benchmark
+cd ~/hdmapping-benchmark
 git clone https://github.com/MapsHD/livox_bag_aggregate.git --recursive
 ```
 ## Docker build
 ```shell
-cd ~/livox_converter_ws/livox_bag_aggregate
+cd ~/hdmapping-benchmark/livox_bag_aggregate
 docker build -t livox_bag_aggregate_noetic .
 ```
 
 ## Docker run
 ```shell
-cd ~/livox_converter_ws/livox_bag_aggregate
+cd ~/hdmapping-benchmark/livox_bag_aggregate
 chmod +x livox_bag.sh 
 livox_bag.sh <input_bag> <output_folder>
 ```
