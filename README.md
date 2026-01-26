@@ -14,6 +14,7 @@ sudo apt update
 sudo apt install -y docker.io
 sudo usermod -aG docker $USER
 ```
+## Workspace
 
 ```shell
 mkdir -p ~/livox_converter_ws
